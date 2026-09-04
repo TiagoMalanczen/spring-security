@@ -19,11 +19,8 @@ public class TokenProvider {
     private String key;
 
     public String gerarToken(Authentication authentication){
-
         UserDetails user = (UserDetails) authentication.getPrincipal();
-
         return buildToken(user.getUsername());
-
     }
     private String buildToken(String username){
         Date now = new Date();

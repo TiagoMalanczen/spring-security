@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-security
+
+    datasource:
+      url: jdbc:mysql://localhost:3306/authDb?createDatabaseIfNotExist=true
+      username: ${DATABASE_USERNAME}
+      password: ${DATABASE_PASSWORD}
+
+    jpa:
+      hibernate:
+        ddl-sql:auto
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+
+    jwt:
+      expiration: 86400000 #24 hrs
+      key: ${JWT}

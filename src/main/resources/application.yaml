@@ -15,4 +15,4 @@ spring:
 
 jwt:
   expiration: 86400000 # 24 hrs
-  key: ${JWT}
+  key: "MinhaChaveSecretaSuperSeguraComMaisDe32Caracteres123456"

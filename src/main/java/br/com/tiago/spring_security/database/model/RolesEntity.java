@@ -2,7 +2,6 @@ package br.com.tiago.spring_security.database.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 
 @Getter
@@ -22,7 +21,7 @@ public class RolesEntity implements GrantedAuthority {
     private String nome;
 
     @Override
-    public @Nullable String getAuthority() {
+    public  String getAuthority() {
         return nome;
     }
 }

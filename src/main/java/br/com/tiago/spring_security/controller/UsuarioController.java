@@ -42,7 +42,7 @@ public class UsuarioController {
     }
 
     @GetMapping(value = "/consultar")
-    public List<UsuarioDTO> listarUsuario(){
+    public List<UsuarioDTO> listarUsuario(@RequestBody LoginDTO loginDTO){
         return usuarioService.listarUsuarios();
     }
 }
